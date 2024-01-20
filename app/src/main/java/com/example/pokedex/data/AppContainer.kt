@@ -15,6 +15,7 @@ interface AppContainer {
 
 
 class DefaultAppContainer : AppContainer {
+    // Appel API
     private val baseUrl = "https://raw.githubusercontent.com/Josstoh/res508-qualite-dev-android/main/rest/"
 
     private val retrofit: Retrofit = Retrofit.Builder()

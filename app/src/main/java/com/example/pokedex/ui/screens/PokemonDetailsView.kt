@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import com.example.pokedex.models.Pokemon
 
-
+// VUE DES DETAILS DES POKEMONS
 @Composable
 fun PokemonDetailsScreen(
     pokemon: Pokemon,
@@ -51,6 +51,7 @@ fun PokemonDetailsScreen(
     }
 }
 
+// Rendu des details des Pokémons
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PokemonDetails(

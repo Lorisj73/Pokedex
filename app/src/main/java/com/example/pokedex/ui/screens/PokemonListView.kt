@@ -61,7 +61,7 @@ fun HomeScreen(
     }
 }
 
-
+// Ecran de chargement
 @Composable
 fun LoadingScreen(modifier: Modifier = Modifier) {
     Image(
@@ -71,6 +71,7 @@ fun LoadingScreen(modifier: Modifier = Modifier) {
     )
 }
 
+// Ecran d'erreur
 @Composable
 fun ErrorScreen(retryAction: () -> Unit, modifier: Modifier = Modifier) {
     Column(
@@ -88,6 +89,7 @@ fun ErrorScreen(retryAction: () -> Unit, modifier: Modifier = Modifier) {
     }
 }
 
+// Affichage de la liste de pokemonsCards
 @Composable
 fun PhotosGridScreen(
     pokemons: List<Pokemon>,
@@ -115,6 +117,7 @@ fun PhotosGridScreen(
     }
 }
 
+// Fonction donnant une couleur selon le type de pokémon
 @Composable
 fun backgroundColorForType(type: String): Color {
     // Assignez une couleur en fonction du type
@@ -128,6 +131,8 @@ fun backgroundColorForType(type: String): Color {
         else -> Color.Gray
     }
 }
+
+// Définition de la PokemonCard affichant un pokémon
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PokemonCard(

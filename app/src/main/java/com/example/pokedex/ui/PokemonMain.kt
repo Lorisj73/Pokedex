@@ -33,7 +33,6 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.pokedex.R
 import com.example.pokedex.ui.screens.HomeScreen
-import com.example.pokedex.PokemonViewModel
 import com.example.pokedex.models.Pokemon
 import com.example.pokedex.ui.screens.PokemonDetails
 
@@ -41,7 +40,7 @@ enum class PokemonScreen(@StringRes val title: Int) {
     Start(title = R.string.app_name),
     PokemonDetails(title = R.string.pokemon_details)
 }
-
+// Application principale
 @Composable
 fun PokemonApp(
     navController: NavHostController = rememberNavController()
@@ -94,7 +93,7 @@ fun PokemonApp(
 }
 
 
-
+// Définition de la TopBar
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PokemonTopAppBar(
@@ -103,6 +102,7 @@ fun PokemonTopAppBar(
         modifier: Modifier = Modifier
     ) {
     TopAppBar(
+        // Flèche de retour ne s'affichant que depuis une carte de pokémon
         navigationIcon = {
             if (canNavigateBack) {
                 IconButton(onClick = navigateUp) {
