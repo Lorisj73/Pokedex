@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="loading">Loading</string>
+    <string name="loading_failed">Failed to load</string>
+    <string name="retry">Retry</string>
+    <string name="pokemons">Pokemons</string>
+    <string name="pokemon_details">PokemonDetails</string>
+</resources>
